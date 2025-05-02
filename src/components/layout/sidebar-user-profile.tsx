@@ -25,7 +25,8 @@ export const SidebarUserProfile: React.FC<SidebarUserProfileProps> = ({
     userRole,
     onLogout,
 }) => {
-    const [username, setUsername] = useState<string>(''); // ✅ إضافة الحالة
+    const [username, setUsername] = useState<string>('');
+    const [role, setUserrole] = useState<string>(''); // ✅ إضافة الحالة
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -33,6 +34,11 @@ export const SidebarUserProfile: React.FC<SidebarUserProfileProps> = ({
         const storedName = localStorage.getItem('username');
         if (storedName) {
             setUsername(storedName);
+        }
+
+        const storedRole = localStorage.getItem('role');
+        if (storedRole) {
+            setUserrole(storedRole);
         }
     }, []);
 
@@ -56,7 +62,8 @@ export const SidebarUserProfile: React.FC<SidebarUserProfileProps> = ({
                             {username || 'Utilisateur'}
                         </div>
                         <div className="text-xs text-sidebar-foreground/70 capitalize">
-                            {roleLabels[userRole] || userRole}
+                            {/* {roleLabels[userRole] || userRole} */}
+                            {role || 'Utilisateur'}
                         </div>
                     </div>
                 </div>

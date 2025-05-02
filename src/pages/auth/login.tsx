@@ -46,7 +46,7 @@ const Login = () => {
             });
 
             const data = await response.json();
-            console.log('API response:', data);
+            console.log('API response:', JSON.stringify(data));
 
             if (data.access && data.refresh) {
                 toast.success('User Login successfully!');
@@ -76,7 +76,7 @@ const Login = () => {
             } else {
                 // alert('فشل تسجيل الدخول. تحقق من البيانات.');
                 // window.location.href = '/';
-                window.location.href = '/dashboard/receptionist';
+                window.location.href = '/';
                 // alert('Faild Login');
                 toast.error(
                     'Login failed. Please try again, Or Check your Data!.'
