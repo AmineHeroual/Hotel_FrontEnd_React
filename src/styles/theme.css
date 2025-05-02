@@ -1,0 +1,123 @@
+
+@layer base {
+  :root {
+    --background: 36 30% 94%;
+    --foreground: 30 41% 17%;
+
+    --card: 36 25% 96%;
+    --card-foreground: 30 41% 17%;
+
+    --popover: 36 25% 96%;
+    --popover-foreground: 30 41% 17%;
+
+    --primary: 42 73% 61%;
+    --primary-foreground: 30 41% 17%;
+
+    --secondary: 36 10% 90%;
+    --secondary-foreground: 30 41% 17%;
+
+    --muted: 36 15% 90%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 42 73% 61%;
+    --accent-foreground: 30 41% 17%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 30% 95%;
+
+    --border: 36 15% 85%;
+    --input: 36 15% 85%;
+    --ring: 42 73% 61%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 30 41% 17%;
+    --sidebar-foreground: 36 30% 95%;
+    --sidebar-primary: 42 73% 61%;
+    --sidebar-primary-foreground: 30 41% 17%;
+    --sidebar-accent: 36 15% 20%;
+    --sidebar-accent-foreground: 36 30% 95%;
+    --sidebar-border: 36 15% 20%;
+    --sidebar-ring: 42 73% 61%;
+  }
+
+  .dark {
+    --background: 26 13% 9%;
+    --foreground: 36 30% 95%;
+
+    --card: 26 15% 11%;
+    --card-foreground: 36 30% 95%;
+
+    --popover: 26 15% 13%;
+    --popover-foreground: 36 30% 95%;
+
+    --primary: 42 73% 61%;
+    --primary-foreground: 26 15% 11%;
+
+    --secondary: 26 10% 20%;
+    --secondary-foreground: 36 30% 95%;
+
+    --muted: 26 15% 20%;
+    --muted-foreground: 36 5% 65%;
+
+    --accent: 42 73% 61%;
+    --accent-foreground: 26 15% 11%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 30% 95%;
+
+    --border: 26 15% 25%;
+    --input: 26 15% 25%;
+    --ring: 42 73% 61%;
+    
+    --sidebar-background: 26 15% 8%;
+    --sidebar-foreground: 36 30% 95%;
+    --sidebar-primary: 42 73% 61%;
+    --sidebar-primary-foreground: 26 15% 11%;
+    --sidebar-accent: 26 15% 20%;
+    --sidebar-accent-foreground: 36 30% 95%;
+    --sidebar-border: 26 15% 20%;
+    --sidebar-ring: 42 73% 61%;
+  }
+}
+
+/* Add these new theme color classes for easily applying the gold theme */
+.theme-gold {
+  --primary: 42 73% 61%;
+  --primary-foreground: 30 41% 17%;
+  --accent: 42 73% 61%;
+  --accent-foreground: 30 41% 17%;
+  --ring: 42 73% 61%;
+}
+
+.theme-emerald {
+  --primary: 160 84% 39%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 160 84% 39%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 160 84% 39%;
+}
+
+.theme-sapphire {
+  --primary: 210 100% 56%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 210 100% 56%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 210 100% 56%;
+}
+
+.theme-ruby {
+  --primary: 0 72% 51%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 0 72% 51%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 0 72% 51%;
+}
+
+.theme-amethyst {
+  --primary: 270 76% 64%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 270 76% 64%;
+  --accent-foreground: 0 0% 100%;
+  --ring: 270 76% 64%;
+}

@@ -1,0 +1,33 @@
+
+.diamond-pattern {
+  background-image: 
+    linear-gradient(45deg, rgba(60, 42, 26, 0.1) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(60, 42, 26, 0.1) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(60, 42, 26, 0.1) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(60, 42, 26, 0.1) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.dark .diamond-pattern {
+  background-image: 
+    linear-gradient(45deg, rgba(200, 170, 110, 0.07) 25%, transparent 25%), 
+    linear-gradient(-45deg, rgba(200, 170, 110, 0.07) 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, rgba(200, 170, 110, 0.07) 75%), 
+    linear-gradient(-45deg, transparent 75%, rgba(200, 170, 110, 0.07) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Brown theme specific styles */
+.brown-gradient {
+  background: linear-gradient(180deg, rgba(60,42,26,0.95) 0%, rgba(31,22,13,1) 100%);
+}
+
+.dark-wood-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233c2a1a' fill-opacity='0.06' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .dark-wood-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c8aa6e' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}

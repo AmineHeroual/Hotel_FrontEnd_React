@@ -1,0 +1,64 @@
+
+/* Lazy loading images */
+.lazy-image {
+  transition: filter 0.3s ease-out, transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.lazy-image-loading {
+  filter: blur(10px);
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+
+.lazy-image-loaded {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Luxury elements */
+.luxury-card {
+  @apply border border-luxury-gold/30 shadow-md;
+}
+
+.luxury-input {
+  @apply border-luxury-gold/30 focus:border-luxury-gold focus:ring-luxury-gold/30;
+}
+
+.luxury-button {
+  @apply bg-luxury-gold text-luxury-dark hover:bg-luxury-gold/90 transition-all;
+}
+
+.luxury-gradient {
+  background: linear-gradient(180deg, rgba(26,24,20,0.95) 0%, rgba(40,35,30,1) 100%);
+}
+
+.luxury-divider {
+  position: relative;
+  height: 1px;
+  background-color: rgba(200, 170, 110, 0.3);
+}
+
+.luxury-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: rgb(200, 170, 110);
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.elegant-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(to right, #C8AA6E, #F5D244, #C8AA6E);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
